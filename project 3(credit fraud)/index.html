@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Credit Card Fraud Detector</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Fraud Detection</h1>
+    <form id="fraudForm">
+      <label>`
+        Transaction Amount:
+        <input type="number" id="amount" required>
+      </label>
+      <label>
+        Transaction Time (in seconds since start of day):
+        <input type="number" id="time" required>
+      </label>
+      <label>
+        Location (e.g., zip code):
+        <input type="text" id="location" required>
+      </label>
+      <label>
+        Previous Fraud Alerts (0 or 1):
+        <select id="history">
+          <option value="0">No</option>
+          <option value="1">Yes</option>
+        </select>
+      </label>
+      <button type="submit">Check Transaction</button>
+    </form>
+    <div id="result"></div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
